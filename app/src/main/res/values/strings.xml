@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="generic_error_toast">An Error Occurred</string>
+
+    <string name="button_popular">Most Popular</string>
+    <string name="button_highest_rated">Highest Rated</string>
+    <string name="button_favorites">Favorites</string>
+    <string name="button_reviews">Reviews</string>
+    <string name="button_mark_favorite">Mark Favorite</string>
+    <string name="button_is_favorite">Remove Favorite</string>
+
+    <string name="detail_rating_tag_text">Rating: </string>
+    <string name="detail_release_tag_text">Release Date: </string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="ifRoom"
+        android:title="@string/button_mark_favorite"
+        android:id="@+id/detail_menu_favorite"
+        android:visible="true" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:title="@string/button_is_favorite"
+        android:id="@+id/detail_menu_unfavorite"
+        android:visible="false" />
+
+    <item
+        app:showAsAction="ifRoom"
+        android:title="@string/button_reviews"
+        android:id="@+id/detail_menu_reviews"/>
+
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Title"
+                android:textSize="@dimen/text_size_25"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/detail_title_text"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <FrameLayout
+            android:id="@+id/detail_banner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/detail_release_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:paddingLeft="5dp"
+                android:text="@string/detail_release_tag_text"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/detail_release_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:paddingLeft="135dp"
+                tools:text="Release"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/detail_rating_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingRight="5dp"
+                tools:text="Rating"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/detail_rating_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingRight="40dp"
+                android:text="@string/detail_rating_tag_text"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/colorWhite"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/detail_description_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlack"
+            tools:text="DESCRIPTION HERE"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintTop_toBottomOf="@id/detail_banner"
+            android:padding="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/rv_detail_trailers"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
